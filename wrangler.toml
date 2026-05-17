@@ -1,8 +1,10 @@
 name = "awsl"
 main = "_worker.js"
 compatibility_date = "2025-11-04"
+
+# 重要：防止自动构建清空变量/绑定
 keep_vars = true
 
-#[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+[[kv_namespaces]]
+binding = "KV"
+id = "f382510b44da4dfb87d3b8ce16d8c07e"
